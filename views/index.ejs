@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>API Capstone Prj</title>
+</head>
+<body>
+    <div class="info-container">
+        <div class="forecast-container">
+            <h1>Today's Weather</h1>
+        
+            <h4 id="currentDate"></h4>
+            <h3 id="location"></h3>
+        
+            <p id="latitude"></p>
+            <p id="longitude"></p>
+            <p id="weather"></p>
+        </div>
+    
+        <div class="forecast-container" id="hourly">
+            <h3>Hourly Forecast</h3>
+            <ul>
+                <li class="hourly-list" id="hour1">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour2">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour3">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour4">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour5">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour6">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour7">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+                <li class="hourly-list" id="hour8">
+                    <span class="time"></span>
+                    <div class="hourly-info-container">
+                        <div>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                        </div>
+                        <span class="description"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-container daily">
+        <h3>Daily Forecast</h3>
+        <div class="daily-container">
+            <ul>
+                <% for(var i = 0; i < 8; i++) { %>
+                    <li class="daily-list" id="day<%= i %>">
+                        <div class="daily-info-container">
+                            <span class="date"></span>
+                            <div class="icon"></div>
+                            <span class="temperature"></span>
+                            <span class="description"></span>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV2NkLTWQQfT8oCHdzRR5ogjdrKvCuwXI&" async defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
